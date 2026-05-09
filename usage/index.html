@@ -541,14 +541,14 @@ In the providers array inside <code>app.php</code> add:</p>
 <span class="x">    $campaignDraft-&gt;setContent($content);</span>
 <span class="x">    $campaignDraftManager-&gt;createDetailContent($campaignDraft-&gt;getId(), $campaignDraft-&gt;getContent());</span>
 </code></pre></div>
-<p>Once the draft campaign draft is all set, it can now be sent via the <code>CampaignDraftContract</code>.
+<p>Once the campaign draft is all set, it can now be sent via the <code>CampaignDraftContract</code>.
 <div class="highlight"><pre><span></span><code><span class="x">     /* Send the campaigndraft instance */</span>
 <span class="x">    $campaignDraftManager-&gt;sendCampaign($campaignDraft-&gt;getId());</span>
 </code></pre></div></p>
 <h2 id="storing-sending-a-template">Storing &amp; Sending a Template</h2>
 <p>The <code>/template</code> resource allows to store your template on the Mailjet system.
 To create a template you only need to provide a name.</p>
-<p>You can than reuse the template in your messages by referencing the ID returned when created.</p>
+<p>You can then reuse the template in your messages by referencing the ID returned when created.</p>
 <p>In the providers array inside <code>app.php</code> add:</p>
 <pre><code>Mailjet\LaravelMailjet\Providers\TemplateServiceProvider::class
 </code></pre>
@@ -632,7 +632,7 @@ To create a template you only need to provide a name.</p>
 <span class="p">}</span>
 </code></pre></div>
 <h2 id="retrieve-mailjet-client-instance-to-perform-custom-requests">Retrieve Mailjet Client instance to perform custom requests</h2>
-<p>You can retrieve the <code>MailjetClient</code> instance, as defined in the PHP <a href="(https://github.com/mailjet/mailjet-apiv3-php)">wrapper</a>, using the method <code>getClient()</code>. It enables you to perform custom requests to Mailjet API.</p>
+<p>You can retrieve the <code>MailjetClient</code> instance, as defined in the PHP <a href="https://github.com/mailjet/mailjet-apiv3-php">wrapper</a>, using the method <code>getClient()</code>. It enables you to perform custom requests to Mailjet API.</p>
 <ul>
 <li>In the providers array</li>
 </ul>

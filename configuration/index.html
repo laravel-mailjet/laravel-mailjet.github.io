@@ -323,12 +323,12 @@ You can pass settings to <a href="https://github.com/mailjet/mailjet-apiv3-php">
 <ul>
 <li><code>sandbox</code> (Default: <code>false</code>): When enabled, emails are processed but not actually sent - useful for testing</li>
 <li><code>transactional</code>: settings for Send API</li>
-<li><code>common</code>: setting to <code>MailjetClient</code> accessible through the Facade Mailjet.</li>
+<li><code>common</code>: settings for <code>MailjetClient</code> accessible through the Facade Mailjet.</li>
 <li><code>url</code> (Default: <code>api.mailjet.com</code>): domain name of the API</li>
 <li><code>version</code> (Default: <code>v3</code>): Mailjet API version (only working for Mailjet API v3)</li>
 <li><code>call</code> (Default: <code>true</code>): Toggle if the API call is actually performed or mocked</li>
 <li><code>secured</code> (Default: <code>true</code>): Toggle the usage of 'https'</li>
-<li><code>v4</code>: setting used for some DataProvider`s</li>
+<li><code>v4</code>: setting used for some <code>DataProvider</code>s</li>
 </ul>
 <h2 id="sandbox-mode">Sandbox Mode</h2>
 <p>Sandbox mode allows you to test your email sending without actually delivering emails. When enabled, Mailjet API will validate your request and return a successful response, but no email will be sent.</p>

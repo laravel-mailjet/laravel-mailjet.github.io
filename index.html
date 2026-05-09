@@ -312,12 +312,12 @@
                 
                 <h1 id="laravel-mailjet">Laravel Mailjet</h1>
 <p>Laravel package for handling Mailjet API V3 using this wrapper: <a href="https://github.com/mailjet/mailjet-apiv3-php">https://github.com/mailjet/mailjet-apiv3-php</a></p>
-<p>It also provide a mailjetTransport for <a href="https://laravel.com/docs/master/mail">Laravel mail feature</a></p>
+<p>It also provides a Mailjet transport for <a href="https://laravel.com/docs/master/mail">Laravel mail feature</a></p>
 <h2 id="installation">Installation</h2>
 <p>First, include the package in your dependencies</p>
 <pre><code>composer require laravel-mailjet/laravel-mailjet
 </code></pre>
-<p>Then, you need to add some informations in your configuration files. You can find your Mailjet API key/secret <a href="https://app.mailjet.com/account/api_keys">here</a>.</p>
+<p>Then, you need to add some information in your configuration files. You can find your Mailjet API key/secret <a href="https://app.mailjet.com/account/api_keys">here</a>.</p>
 <ul>
 <li>In the providers array add the service providers you want to use, for example:</li>
 </ul>
@@ -341,7 +341,7 @@
 <ul>
 <li>In the services.php file</li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="x">mailjet&#39; =&gt; [</span>
+<div class="highlight"><pre><span></span><code><span class="x">&#39;mailjet&#39; =&gt; [</span>
 <span class="x">    &#39;key&#39; =&gt; env(&#39;MAILJET_APIKEY&#39;),</span>
 <span class="x">    &#39;secret&#39; =&gt; env(&#39;MAILJET_APISECRET&#39;),</span>
 <span class="x">]</span>
@@ -376,8 +376,8 @@ use Mailjet\LaravelMailjet\Contracts\CampaignDraftContract;
 <li><code>Mailjet::createListRecipient($body)</code></li>
 <li><code>Mailjet::editListrecipient($id, $body)</code></li>
 </ul>
-<p>For more informations about the filters you can use in each methods, refer to the <a href="https://dev.mailjet.com/email-api/v3/apikey/">Mailjet API documentation</a></p>
-<p>All method return <code>Mailjet\Response</code> or throw a <code>MailjetException</code> in case of API error.</p>
+<p>For more information about the filters you can use in each method, refer to the <a href="https://dev.mailjet.com/email-api/v3/apikey/">Mailjet API documentation</a></p>
+<p>All methods return <code>Mailjet\Response</code> or throw a <code>MailjetException</code> in case of API error.</p>
 <p>You can also get the Mailjet API client with the method <code>getClient()</code> and make your own request to Mailjet API.</p>
               
               
